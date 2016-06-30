@@ -69,6 +69,7 @@
               <ng-outlet></ng-outlet>
             </div>
           </div>
+          <feedback user-name="$ctrl.userData.name"></feedback>
         `,
         $routeConfig: [
           {path: '/', name: 'Home', component: 'home', useAsDefault: true},

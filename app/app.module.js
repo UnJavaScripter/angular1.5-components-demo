@@ -2,5 +2,5 @@
 
 (function(){
   angular
-    .module('angularFireDemoApp', ['ngComponentRouter']);
+    .module('angularFireDemoApp', ['ngComponentRouter', 'unJS']);
 })();

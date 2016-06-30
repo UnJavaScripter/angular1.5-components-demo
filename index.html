@@ -35,7 +35,17 @@
   <!--componente-->
   <script src="./node_modules/firebase/firebase.js"></script>
   <script src="./node_modules/angularfire/dist/angularfire.js"></script>
-  <!--<script src="./app/shared/feedback.component.js"></script>-->
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCKJe5k5ljDTYDmHMQrZXsA_mvvA3T86lU",
+      authDomain: "fir-ad413.firebaseapp.com",
+      databaseURL: "https://fir-ad413.firebaseio.com",
+      storageBucket: "fir-ad413.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./app/shared/feedback.component.js"></script>
 
 </body>
 </html>
