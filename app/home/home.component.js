@@ -3,10 +3,7 @@
 (function(){
 
   function ctrlFn() {
-    console.log("home component");
-    this.$routerOnActivate = function(next) {
-      console.log(next);
-    }
+    console.log('home component');
   }
 
   angular
@@ -16,8 +13,15 @@
         },
         controller: ctrlFn,
         template: `
-          hoooome <a ng-link="['About']">Aaaabout</a>
-        `,
-        $routeConfig: []
+        <style>
+          home>h2 {
+            font-size: 2em;
+          }
+        </style>
+          <h2 class="text-center">Esta es una aplicación de demostración del uso de componentes en Angular 1.5^</h2>
+          <div class="text-center">
+            <img src="https://unsplash.it/500/500/?random">
+          </div>
+        `
        });
 })();
